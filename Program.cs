@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using TodoApp.WebAPI.Filters;
 using ToDoApp.Application.Interfaces;
 using ToDoApp.Application.Services;
 using ToDoApp.Domain.Entities;
@@ -18,12 +19,12 @@ namespace ToDoAppWebApi
 
             var useInMemoryDB = builder.Configuration.GetValue<bool>("UseInMemoryDB");
 
-       
 
-           //builder.Services.AddControllers(options =>
-           //{
-           //    options.Filters.Add<GlobalExceptionFilter>();
-           //});
+
+            builder.Services.AddControllers(options =>
+            {
+                options.Filters.Add<GlobalExceptionFilter>();
+            });
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

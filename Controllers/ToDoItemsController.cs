@@ -6,7 +6,6 @@ using ToDoApp.Domain.Entities;
 
 namespace ToDoAppWebApi.Controllers
 {
-
     [Route("api/[controller]")]
     [ApiController]
     public class ToDoItemController : ControllerBase
