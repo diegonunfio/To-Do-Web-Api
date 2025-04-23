@@ -33,16 +33,11 @@ This is a RESTful Web API project built with **ASP.NET Core 8**, following the *
 **Users**
 - `GET /api/User/GetAll` → Get all users  
 - `GET /api/User/{id}` → Get a user by ID  
-- `POST /api/User` → Create a new user  
-- `PUT /api/User/{id}` → Update an existing user  
-- `DELETE /api/User/{id}` → Delete a user  
-
+- `POST /api/User` → Create a new user
+  
 **Task Lists**
-- `GET /api/TaskList/GetAll` → Get all task lists  
 - `GET /api/TaskList/{id}` → Get a task list by ID  
 - `POST /api/TaskList` → Create a new task list  
-- `PUT /api/TaskList/{id}` → Update a task list  
-- `DELETE /api/TaskList/{id}` → Delete a task list  
 
 **Task Items**
 - `GET /api/TaskItem/GetAll` → Get all tasks  
